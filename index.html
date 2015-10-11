@@ -36,7 +36,32 @@
 			width: 100% !important;
 		}
 		<!--=====RESPONSIVE STYLES=====The following media queries allow this email to adjust its layout in response to the size of the email client's viewing area. Since the inline rules in the body of the email will take precident over these rules in the style section, they must be marked !important in order to be applied. -->
-		 @media only screen and (max-width: 480px) {
+		 @media only screen and (max-width: 600px) {
+			 
+			#mainContainer {
+				width:500px !important;
+			}
+			 
+			 #mainContent {
+				 width: 500px !important;
+			 }
+			 
+			 #mainContentContainer {
+				 width: 500px !important;
+			 }
+			 
+			 #secondaryContent {
+				 width: 400px !important;
+			 }
+			 
+			 #secondaryLeft {
+				 display: block !important;
+			 }
+			 
+			 #secondaryRight {
+				 display: block !important;
+				 text-align: center !important;
+			 }
 			 
 		 }
 	</style>
@@ -45,22 +70,22 @@
 <body style="margin: 0px; padding: 0px;">
 	<center>
 		<!-- IDs will be used for unique elements in the markup whill classes will be used for elements that appear more than once -->
-		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" background="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/wood-background-darker.jpg">
 			<tr>
-				<td align="center" valign="top" id="bodyCell" style="background-color: #444">
+				<td align="center" valign="top" id="bodyCell">
 					<!-- // BEGIN EMAIL -->
 					<table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailContainer">
 						<tr>
-							<td align="center" valign="top" id="mainContainer">
+							<td align="center" valign="top" id="mainContainer" style="width: 600px;">
 								<!-- // MAIN // -->
-								<table border="0" cellpadding="0" cellspacing="0" width="500px">
+								<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 10px;">
 									<tr>
 										<td align="center" valign="top" id="dscCrest">
-											<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/dsc-crest.png" title="Dollar Shave Club" height="40px" width="40px" id="dscCrestLogo">
+											<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/dsc-crest.png" title="Dollar Shave Club" height="50px" width="50px" id="dscCrestLogo">
 										</td>
 									</tr>
 									<tr>
-										<td align="center" valign="top" id="introducingContent">
+										<td align="center" valign="top" id="introducingContent" style="margin-bottom: 0px;">
 											<table border="0" cellpadding="0" cellspacing="0" width="">
 												<td align="center" valign="center" class="horizontalLine">
 													<hr width="30px" style="color: #fff">
@@ -75,13 +100,13 @@
 										</td>
 									</tr>
 									<tr>
-										<td align="center" valign="top" id="mainTitle" style="color: #fff; font-family: sans-serif; text-transform: uppercase">
-											<h1>Boogie's<br/>True Hair Fiber</h1>
+										<td align="center" valign="top" id="mainTitle" style="color: #fff; font-family: sans-serif; text-transform: uppercase; margin-top: -20px;">
+											<h1 style="margin-top: -10px">Boogie's<br/>True Hair Fiber</h1>
 										</td>
 									</tr>
 									<tr>
 										<td align="center" valign="middle" id="actionOne">
-											<table border="0" cellpadding="0" cellspacing="0" width="200px" class="callToActionButton" style="background-color: #D83826;border-radius: 3px; margin: 40px;">
+											<table border="0" cellpadding="0" cellspacing="0" width="200px" class="callToActionButton" style="background-color: #D83826;border-radius: 3px; margin-bottom: 40px;">
 												<tr>
 													<td align="center" valign="middle" class="callToActionButtonContent" style="font-family: Helvetica, Arial, sans-serif;color: #fff;display: block;font-size: 16px;font-weight: bold;line-height: 100%;text-align: center;text-decoration: none;">
 														<a href="#" target="_blank" title="Try a puck" style="color: #fff;display: block;font-size: 16px;font-weight: bold;line-height: 100%;text-align: center;vertical-align: middle;text-decoration: none;text-transform:uppercase; margin: 12px 0">try a puck</a>
@@ -92,13 +117,19 @@
 									</tr>
 									<tr>
 										<td align="center" valign="top" id="mainPicCell">
-											<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/hair-fiber.png" title="Boogie's Hair Fiber" height="300px" width="300px" id="mainPic">
+											<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/hair-fiber.png" title="Boogie's Hair Fiber" height="800px" width="800px" id="mainPic" style="margin: 0 -150px -30px -150px;">
 										</td>
 									</tr>
 									<tr>
-										<td align="center" valign="center" width="400px" id="mainContent" style="font-family: Helvetica, Arial, sans-serif; color: #fff; ">
-											Rub the fiber into a smoothness that gives hair thickness, fullness and well-defined shape. Pick a style, any style. The Hair Fiber will hold it and keep it malleable for easy readjustment. Great for adding fullness and texture to short or medium length
-											hair. Create a mold, just so you can break it.
+										<td align="center" valign="center" id="mainContentContainer">
+											<table border="0" cellpadding="0" cellspacing="0" id="mainContent" style="font-family: Helvetica, Arial, sans-serif; color: #fff; text-align: center; line-height: 1.5em; width: 600px">
+												<tr>
+													<td>
+														Rub the fiber into a smoothness that gives hair thickness, fullness and well-defined shape. Pick a style, any style. The Hair Fiber will hold it and keep it malleable for easy readjustment. Great for adding fullness and texture to short or medium length hair. Create a mold, just so you can break it.
+													</td>
+												</tr>
+											</table>
+											
 										</td>
 									</tr>
 									<tr>
@@ -116,26 +147,24 @@
 							</td>
 						</tr>
 						<tr>
-							<td align="center" valign="top" id="secondaryContainer" style="background-color: #222; opacity: .6; padding: 30px 0 15px 0;">
+							<td align="center" valign="top" width="100%" id="secondaryContainer" style="background:rgba(25,25,25,.9); padding: 30px 0 15px 0">
 								<!-- // SECONDARY // -->
-								<table border="0" cellpadding="0" cellspacing="0" width="600px">
+								<table border="0" cellpadding="0" cellspacing="0" id="secondaryContent" style="width: 600px">
 									<tr>
-										<td align="center" valign="top" id="secondaryLeft">
-											<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<td align="center" valign="top">
+											<table align="left" border="0" cellpadding="0" cellspacing="0" width="237px" id="secondaryLeft">
 												<tr>
-													<td align="center" valign="top" id="hairanteeContainer">
-														<img src="hairantee" title="Boogie's Hairantee" height="25px" width="25px" id="hairantee">
+													<td align="left" valign="top" id="hairanteeContainer" style="height: 80px; width: 80px;">
+														<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/hairantee.png" title="Boogie's Hairantee" height="80px" width="80px" id="hairantee">
 													</td>
-													<td align="center" valign="top" id="boogiesProductContainer">
-														<img src="boogies" title="Boogie's Products" height="80px" width="40px" id="boogiesProducts">
+													<td align="left" valign="top" height="175px" width="157px" id="boogiesProductContainer">
+														<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/boogies-products.png" title="Boogie's Products" height="175px" width="157px" id="boogiesProducts" style="margin-left:-40px;">
 													</td>
 												</tr>
 											</table>
-										</td>
-										<td align="center" valign="top" id="secondaryRight">
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-left: 20px;">
+											<table align="right" border="0" cellpadding="0" cellspacing="0" id="secondaryRight" style="width: 350px; text-align: left;">
 												<tr>
-													<td align="center" valign="top" id="hairanteeContainer" style="font-family: Helvetica, Arial, sans-serif; color: #fff; text-align: left;">
+													<td valign="top" id="hairanteeContainer" style="font-family: Helvetica, Arial, sans-serif; color: #fff; line-height: 1.5em;">
 														<h3 style="text-transform: uppercase; font-size: 16px; margin-top: 10px;">the risk free hairantee</h3>
 														If your product isnt a 100&#37; perfect fit, we&#39;ll ship you a full-sized replacement option, totally free. That&#39;s it.
 														<h3><a href="#" target="_blank" style="color: #D83826; display: block; font-size: 16px; font-weight: bold;line-height: 100%; text-decoration: none; text-transform:uppercase;">learn more</a></h3>
@@ -147,29 +176,29 @@
 								</table>
 							</td>
 						<tr>
-							<td align="center" valign="top" id="footerContainer" style="background-color: #555; padding: 30px 0; font-family: Helvetica, Arial, sans-serif;color: #aaa;">
+							<td align="center" valign="top" id="footerContainer" style="background-color: #333; padding: 30px 0; font-family: Helvetica, Arial, sans-serif;color: #888;">
 								<!-- // FOOTER // -->
 								<table border="0" cellpadding="0" cellspacing="0" width="600px">
 									<tr>
-										<td align="center" valign="top">
-											<table border="0" cellpadding="0" cellspacing="0" width="350px">
+										<td align="center" valign="top" style="opacity: .3">
+											<table border="0" cellpadding="0" cellspacing="0" width="300px">
 												<td align="center" valign="top" class="footerSocial">
-													<img src="facebook" height="40px" width="40px" class="socialLogo">
+													<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/facebook.png" height="35px" width="35px" class="socialLogo">
 												</td>
 												<td align="center" valign="top" class="footerSocial">
-													<img src="twitter" height="40px" width="40px" class="socialLogo">
+													<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/twitter.png" height="35px" width="35px" class="socialLogo">
 												</td>
 												<td align="center" valign="top" class="footerSocial">
-													<img src="google" height="40px" width="40px" class="socialLogo">
+													<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/google-plus.png" height="35px" width="35px" class="socialLogo">
 												</td>
 												<td align="center" valign="top" class="footerSocial">
-													<img src="youtube" height="40px" width="40px" class="socialLogo">
+													<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/youtube.png" height="35px" width="35px" class="socialLogo">
 												</td>
 												<td align="center" valign="top" class="footerSocial">
-													<img src="pinterest" height="40px" width="40px" class="socialLogo">
+													<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/pinterest.png" height="35px" width="35px" class="socialLogo">
 												</td>
 												<td align="center" valign="top" class="footerSocial">
-													<img src="instagram" height="40px" width="40px" class="socialLogo">
+													<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/instagram.png" height="35px" width="35px" class="socialLogo">
 												</td>
 											</table>
 										</td>
