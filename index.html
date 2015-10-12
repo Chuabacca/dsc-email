@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Dollar Shave Club | Newsletter</title>
 	<style type="text/css">
-		<!--=====RESET STYLES=====This is a standard set of CSS rules to deal with some particular styling quirks that are automatically applied by some email clients. These rules provide a solid foundation upon which to build our email-specific styles --> 
+		/* =====RESET STYLES=====This is a standard set of CSS rules to deal with some particular styling quirks that are automatically applied by some email clients. These rules provide a solid foundation upon which to build our email-specific styles */ 
 		body {
 			margin: 0 !important;
 			padding: 0 !important;
@@ -35,32 +35,50 @@
 			padding: 0;
 			width: 100% !important;
 		}
-		<!--=====RESPONSIVE STYLES=====The following media queries allow this email to adjust its layout in response to the size of the email client's viewing area. Since the inline rules in the body of the email will take precident over these rules in the style section, they must be marked !important in order to be applied. -->
+		/* =====RESPONSIVE STYLES=====The following media queries allow this email to adjust its layout in response to the size of the email client's viewing area. Since the inline rules in the body of the email will take precident over these rules in the style section, they must be marked !important in order to be applied. */
 		 @media only screen and (max-width: 600px) {
 			 
 			#mainContainer {
 				width:500px !important;
 			}
 			 
-			 #mainContent {
+			#mainContent {
 				 width: 500px !important;
 			 }
+			 
+			#mainContentCell {
+				width: 500px !important;
+			}
 			 
 			 #mainContentContainer {
 				 width: 500px !important;
 			 }
 			 
 			 #secondaryContent {
-				 width: 400px !important;
+				 width: 350px !important;
 			 }
 			 
 			 #secondaryLeft {
 				 display: block !important;
+				 width: 100% !important;
 			 }
 			 
 			 #secondaryRight {
 				 display: block !important;
 				 text-align: center !important;
+			 }
+			 
+			 #boogiesProductContainer {
+				 width: 350px !important;
+			 }
+			 
+			 #boogiesProducts {
+				 margin-right: 96px !important;
+				 margin-left: -60px !important;
+			 }
+			 
+			 #hairanteeText {
+				 width: 100% !important;
 			 }
 			 
 		 }
@@ -86,14 +104,14 @@
 									</tr>
 									<tr>
 										<td align="center" valign="top" id="introducingContent" style="margin-bottom: 0px;">
-											<table border="0" cellpadding="0" cellspacing="0" width="">
-												<td align="center" valign="center" class="horizontalLine">
+											<table border="0" cellpadding="0" cellspacing="0" width="200px">
+												<td align="right" valign="center" class="horizontalLine">
 													<hr width="30px" style="color: #fff">
 												</td>
 												<td align="center" valign="center" id="introducing" style="font-family: cursive; color: #fff">
 													<h2 style="margin: 10px">Introducing</h2>
 												</td>
-												<td align="center" valign="center" class="horizontalLine">
+												<td align="left" valign="center" class="horizontalLine">
 													<hr width="30px" style="color: #fff">
 												</td>
 											</table>
@@ -124,7 +142,7 @@
 										<td align="center" valign="center" id="mainContentContainer">
 											<table border="0" cellpadding="0" cellspacing="0" id="mainContent" style="font-family: Helvetica, Arial, sans-serif; color: #fff; text-align: center; line-height: 1.5em; width: 600px">
 												<tr>
-													<td>
+													<td id="mainContentCell">
 														Rub the fiber into a smoothness that gives hair thickness, fullness and well-defined shape. Pick a style, any style. The Hair Fiber will hold it and keep it malleable for easy readjustment. Great for adding fullness and texture to short or medium length hair. Create a mold, just so you can break it.
 													</td>
 												</tr>
@@ -154,17 +172,15 @@
 										<td align="center" valign="top">
 											<table align="left" border="0" cellpadding="0" cellspacing="0" width="237px" id="secondaryLeft">
 												<tr>
-													<td align="left" valign="top" id="hairanteeContainer" style="height: 80px; width: 80px;">
-														<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/hairantee.png" title="Boogie's Hairantee" height="80px" width="80px" id="hairantee">
-													</td>
-													<td align="left" valign="top" height="175px" width="157px" id="boogiesProductContainer">
+													<td align="right" valign="top" id="boogiesProductContainer" style="height: 80px; width: 80px;">
+														<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/hairantee.png" title="Boogie's Hairantee" height="80px" width="80px" id="hairantee" align="top">
 														<img src="https://raw.githubusercontent.com/Chuabacca/dsc-email/master/boogies-products.png" title="Boogie's Products" height="175px" width="157px" id="boogiesProducts" style="margin-left:-40px;">
 													</td>
 												</tr>
 											</table>
 											<table align="right" border="0" cellpadding="0" cellspacing="0" id="secondaryRight" style="width: 350px; text-align: left;">
 												<tr>
-													<td valign="top" id="hairanteeContainer" style="font-family: Helvetica, Arial, sans-serif; color: #fff; line-height: 1.5em;">
+													<td valign="top" id="hairanteeText" style="font-family: Helvetica, Arial, sans-serif; color: #fff; line-height: 1.5em;">
 														<h3 style="text-transform: uppercase; font-size: 16px; margin-top: 10px;">the risk free hairantee</h3>
 														If your product isnt a 100&#37; perfect fit, we&#39;ll ship you a full-sized replacement option, totally free. That&#39;s it.
 														<h3><a href="#" target="_blank" style="color: #D83826; display: block; font-size: 16px; font-weight: bold;line-height: 100%; text-decoration: none; text-transform:uppercase;">learn more</a></h3>
